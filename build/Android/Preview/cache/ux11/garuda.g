@@ -1,0 +1,9 @@
+build/Android/Preview/cache/ux11/MainView.g.uno
+build/Android/Preview/cache/ux11/Tab.g.uno
+build/Android/Preview/cache/ux11/WelcomeText.g.uno
+build/Android/Preview/cache/ux11/page1Text.g.uno
+build/Android/Preview/cache/ux11/page1TextBawah.g.uno
+build/Android/Preview/cache/ux11/TabIcon.g.uno
+build/Android/Preview/cache/ux11/Logo.g.uno
+build/Android/Preview/cache/ux11/PagePlaceholder.g.uno
+build/Android/Preview/cache/ux11/garuda.unoproj.g.uno

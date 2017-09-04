@@ -1,0 +1,109 @@
+<App Background="#eee">
+
+    <Font ux:Global="RobotoMedium" File="Roboto-Medium.ttf" />
+
+    <Panel ux:Class="Tab" ClipToBounds="false" Margin="0,0,0,4" Background="#bdc3c7">
+        <string ux:Property="Text" />
+        <Text Value="{ReadProperty Text}" Color="#FFF" Font="RobotoMedium" Alignment="Center" />
+    </Panel>
+
+    <Rectangle ux:Name="indicator" LayoutMaster="page1Tab" Alignment="Top" Height="4" Color="#6c7a89">
+        <LayoutAnimation>
+            <Move RelativeTo="WorldPositionChange" X="2" Duration="0.6" Easing="BackIn"/>
+        </LayoutAnimation>
+    </Rectangle>
+
+    <Text ux:Class="WelcomeText" FontSize="30" Alignment="Center"/>
+    <Text ux:Class="page1Text" FontSize="18" Alignment="Left" X="30" Y="360" TextColor="#FFFFFF"/>
+    <Text ux:Class="page1TextBawah" FontSize="23" Alignment="Left" X="30" Y="390" TextColor="#FFFFFF" Font="Bold"/>
+    <Image ux:Class="TabIcon" Width="25" Height="25" />
+    <Image ux:Class="Logo" Width="220" Height="120" Alignment="TopCenter"/>
+    <Image ux:Class="PagePlaceholder" Margin="0,0,0,0" StretchMode="Fill" ContentAlignment="Top" Layer="Overlay"/>
+
+    <DockPanel>
+        <StatusBarBackground Dock="Top" />
+        <BottomBarBackground Dock="Bottom" />
+
+        <PageControl ux:Name="navigation">
+            <Page ux:Name="page1" Background="#eee">
+                <WhileActive Threshold="0.5">
+                    <Set indicator.LayoutMaster="page1Tab" />
+                </WhileActive>
+            	<PagePlaceholder File="stewardess3.png">
+            		<!-- <Logo File="logo.png"/> -->
+        			<page1Text>Good Afternoon</page1Text>
+        			<page1TextBawah>Login or Register</page1TextBawah>
+        			<page1Text FontSize="14" X="30" Y="420">Let's plan your next trip</page1Text>
+        			<Image File="book.png" Width="85" Height="85" StretchMode="Fill" X="50" Y="485">
+        			</Image>
+        			<Rectangle Color="#D3D3D3" Width="4" Height="70" Y="490"/>
+        			<Image File="checkin.png" Width="80" Height="80" StretchMode="Fill" X="243" Y="494">
+        			</Image>
+        		</PagePlaceholder>
+            </Page>
+            <Page ux:Name="page2" Background="#abb7b7">
+                <WhileActive Threshold="0.5">
+                    <Set indicator.LayoutMaster="page2Tab" />
+                </WhileActive>
+                <WelcomeText>Welcome to Page 2</WelcomeText>
+            </Page>
+            <Page ux:Name="page3" Background="#f2f1ef">
+                <WhileActive Threshold="0.5">
+                    <Set indicator.LayoutMaster="page3Tab" />
+                </WhileActive>
+                <WelcomeText>Welcome to Page 3</WelcomeText>
+            </Page>
+            <Page ux:Name="page4" Background="#abb7b7">
+                <WhileActive Threshold="0.5">
+                    <Set indicator.LayoutMaster="page4Tab" />
+                </WhileActive>
+                <WelcomeText>Welcome to Page 4</WelcomeText>
+            </Page>
+            <Page ux:Name="page5" Background="#f2f1ef">
+                <WhileActive Threshold="0.5">
+                    <Set indicator.LayoutMaster="page5Tab" />
+                </WhileActive>
+                <WelcomeText>Welcome to Page 5</WelcomeText>
+            </Page>
+        </PageControl>
+
+        <Grid Dock="Bottom" ColumnCount="5" Height="50" Background="#bdc3c7">
+            <Panel ux:Name="page1Tab">
+                <TabIcon File="flight.png">
+                    <Clicked>
+                        <Set navigation.Active="page1" />
+                    </Clicked>
+                </TabIcon>
+            </Panel>
+            <Panel ux:Name="page2Tab">
+                <TabIcon File="baggage.png">
+                    <Clicked>
+                        <Set navigation.Active="page2" />
+                    </Clicked>
+                </TabIcon>
+            </Panel>
+            <Panel ux:Name="page3Tab">
+                <TabIcon File="offers.png">
+                    <Clicked>
+                        <Set navigation.Active="page3" />
+                    </Clicked>
+                </TabIcon>
+            </Panel>
+            <Panel ux:Name="page4Tab">
+                <TabIcon File="account.png">
+                    <Clicked>
+                        <Set navigation.Active="page4" />
+                    </Clicked>
+                </TabIcon>
+            </Panel>
+            <Panel ux:Name="page5Tab">
+                <TabIcon File="more.png">
+                    <Clicked>
+                        <Set navigation.Active="page5" />
+                    </Clicked>
+                </TabIcon>
+            </Panel>
+        </Grid>
+
+    </DockPanel>
+</App>

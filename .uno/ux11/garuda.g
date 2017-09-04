@@ -1,0 +1,9 @@
+.uno/ux11/MainView.g.uno
+.uno/ux11/Tab.g.uno
+.uno/ux11/WelcomeText.g.uno
+.uno/ux11/page1Text.g.uno
+.uno/ux11/page1TextBawah.g.uno
+.uno/ux11/TabIcon.g.uno
+.uno/ux11/Logo.g.uno
+.uno/ux11/PagePlaceholder.g.uno
+.uno/ux11/garuda.unoproj.g.uno
