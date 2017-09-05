@@ -1,0 +1,9 @@
+<Page ux:Class="BookView" Background="#eee">
+
+    <Router ux:Dependency="router" />
+
+	<Panel>
+		    <Text>This child will be drawn over the other child</Text>
+	</Panel>
+
+</Page>

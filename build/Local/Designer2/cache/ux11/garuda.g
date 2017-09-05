@@ -1,0 +1,11 @@
+build/Local/Designer2/cache/ux11/BookView.g.uno
+build/Local/Designer2/cache/ux11/FirstView.g.uno
+build/Local/Designer2/cache/ux11/Tab.g.uno
+build/Local/Designer2/cache/ux11/WelcomeText.g.uno
+build/Local/Designer2/cache/ux11/page1Text.g.uno
+build/Local/Designer2/cache/ux11/page1TextBawah.g.uno
+build/Local/Designer2/cache/ux11/TabIcon.g.uno
+build/Local/Designer2/cache/ux11/Logo.g.uno
+build/Local/Designer2/cache/ux11/PagePlaceholder.g.uno
+build/Local/Designer2/cache/ux11/MainView.g.uno
+build/Local/Designer2/cache/ux11/garuda.unoproj.g.uno

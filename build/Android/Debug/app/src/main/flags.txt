@@ -1,7 +1,0 @@
-
-9
-armeabi-v7a
--O3 -g -DNDEBUG
-
- -IC:/Users/Lotus/AppData/Local/Fusetools/Packages/UnoCore/1.2.1/prebuilt/Android/include -I/sources/android/support/include -IC:/Users/Lotus/AppData/Local/Fusetools/Packages/Fuse.Scripting.V8/1.2.0
-/sources/cxx-stl/gnu-libstdc++/4.9/include

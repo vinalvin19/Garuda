@@ -17,14 +17,6 @@ sealed class garuda_FuseControlsTextControl_Value_Property: Uno.UX.Property<stri
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
-sealed class garuda_FuseControlsNavigationControl_Active_Property: Uno.UX.Property<Fuse.Visual>
-{
-    [Uno.WeakReference] readonly Fuse.Controls.NavigationControl _obj;
-    public garuda_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.NavigationControl)obj).Active; }
-    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.NavigationControl)obj).Active = v; }
-}
 sealed class garuda_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Property<Fuse.Elements.Element>
 {
     [Uno.WeakReference] readonly Fuse.Elements.Element _obj;
@@ -32,6 +24,14 @@ sealed class garuda_FuseElementsElement_ElementLayoutMaster_Property: Uno.UX.Pro
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override Fuse.Elements.Element Get(global::Uno.UX.PropertyObject obj) { return global::Fuse.Controls.LayoutControl.GetLayoutMaster((Fuse.Elements.Element)obj); }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Elements.Element v, global::Uno.UX.IPropertyListener origin) { global::Fuse.Controls.LayoutControl.SetLayoutMaster((Fuse.Elements.Element)obj, v); }
+}
+sealed class garuda_FuseControlsNavigationControl_Active_Property: Uno.UX.Property<Fuse.Visual>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.NavigationControl _obj;
+    public garuda_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.NavigationControl)obj).Active; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.NavigationControl)obj).Active = v; }
 }
 sealed class garuda_Tab_Text_Property: Uno.UX.Property<string>
 {

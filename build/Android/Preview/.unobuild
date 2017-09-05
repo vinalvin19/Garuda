@@ -1,4 +1,0 @@
-$: 251652080
-BuildCommand: build.bat
-RunCommand: run.bat
-Product: garuda.apk
